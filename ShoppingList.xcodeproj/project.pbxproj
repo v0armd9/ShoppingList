@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C18ECB322BD2E62009E0D55 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C18ECB222BD2E62009E0D55 /* CoreDataStack.swift */; };
+		2C18ECB522BD2EA3009E0D55 /* Product+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C18ECB422BD2EA3009E0D55 /* Product+Convenience.swift */; };
+		2C18ECB722BD2F25009E0D55 /* ProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C18ECB622BD2F25009E0D55 /* ProductController.swift */; };
 		2C7CD41522BD2B26005E9AA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CD41422BD2B26005E9AA2 /* AppDelegate.swift */; };
-		2C7CD41722BD2B26005E9AA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CD41622BD2B26005E9AA2 /* ViewController.swift */; };
 		2C7CD41A22BD2B26005E9AA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7CD41822BD2B26005E9AA2 /* Main.storyboard */; };
 		2C7CD41D22BD2B26005E9AA2 /* ShoppingList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CD41B22BD2B26005E9AA2 /* ShoppingList.xcdatamodeld */; };
 		2C7CD41F22BD2B2D005E9AA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C7CD41E22BD2B2D005E9AA2 /* Assets.xcassets */; };
@@ -16,9 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C18ECB222BD2E62009E0D55 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		2C18ECB422BD2EA3009E0D55 /* Product+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+Convenience.swift"; sourceTree = "<group>"; };
+		2C18ECB622BD2F25009E0D55 /* ProductController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductController.swift; sourceTree = "<group>"; };
 		2C7CD41122BD2B26005E9AA2 /* ShoppingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C7CD41422BD2B26005E9AA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C7CD41622BD2B26005E9AA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C7CD41922BD2B26005E9AA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C7CD41C22BD2B26005E9AA2 /* ShoppingList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoppingList.xcdatamodel; sourceTree = "<group>"; };
 		2C7CD41E22BD2B2D005E9AA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				2C7CD41B22BD2B26005E9AA2 /* ShoppingList.xcdatamodeld */,
+				2C18ECB222BD2E62009E0D55 /* CoreDataStack.swift */,
+				2C18ECB422BD2EA3009E0D55 /* Product+Convenience.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -103,7 +109,6 @@
 		2C7CD42D22BD2B6F005E9AA2 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2C7CD41622BD2B26005E9AA2 /* ViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 		2C7CD42E22BD2B82005E9AA2 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2C18ECB622BD2F25009E0D55 /* ProductController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -186,8 +192,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C18ECB322BD2E62009E0D55 /* CoreDataStack.swift in Sources */,
+				2C18ECB522BD2EA3009E0D55 /* Product+Convenience.swift in Sources */,
 				2C7CD41D22BD2B26005E9AA2 /* ShoppingList.xcdatamodeld in Sources */,
-				2C7CD41722BD2B26005E9AA2 /* ViewController.swift in Sources */,
+				2C18ECB722BD2F25009E0D55 /* ProductController.swift in Sources */,
 				2C7CD41522BD2B26005E9AA2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
