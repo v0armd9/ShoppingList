@@ -11,6 +11,7 @@
 		2C18ECB522BD2EA3009E0D55 /* Product+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C18ECB422BD2EA3009E0D55 /* Product+Convenience.swift */; };
 		2C18ECB722BD2F25009E0D55 /* ProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C18ECB622BD2F25009E0D55 /* ProductController.swift */; };
 		2C18ECB922BD3257009E0D55 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C18ECB822BD3257009E0D55 /* ProductTableViewCell.swift */; };
+		2C18ECBC22BD3668009E0D55 /* ProductListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C18ECBB22BD3668009E0D55 /* ProductListTableViewController.swift */; };
 		2C7CD41522BD2B26005E9AA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CD41422BD2B26005E9AA2 /* AppDelegate.swift */; };
 		2C7CD41A22BD2B26005E9AA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7CD41822BD2B26005E9AA2 /* Main.storyboard */; };
 		2C7CD41D22BD2B26005E9AA2 /* ShoppingList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CD41B22BD2B26005E9AA2 /* ShoppingList.xcdatamodeld */; };
@@ -23,6 +24,7 @@
 		2C18ECB422BD2EA3009E0D55 /* Product+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+Convenience.swift"; sourceTree = "<group>"; };
 		2C18ECB622BD2F25009E0D55 /* ProductController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductController.swift; sourceTree = "<group>"; };
 		2C18ECB822BD3257009E0D55 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		2C18ECBB22BD3668009E0D55 /* ProductListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListTableViewController.swift; sourceTree = "<group>"; };
 		2C7CD41122BD2B26005E9AA2 /* ShoppingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C7CD41422BD2B26005E9AA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C7CD41922BD2B26005E9AA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		2C7CD42D22BD2B6F005E9AA2 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2C18ECBB22BD3668009E0D55 /* ProductListTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				2C18ECB522BD2EA3009E0D55 /* Product+Convenience.swift in Sources */,
 				2C7CD41D22BD2B26005E9AA2 /* ShoppingList.xcdatamodeld in Sources */,
 				2C18ECB722BD2F25009E0D55 /* ProductController.swift in Sources */,
+				2C18ECBC22BD3668009E0D55 /* ProductListTableViewController.swift in Sources */,
 				2C7CD41522BD2B26005E9AA2 /* AppDelegate.swift in Sources */,
 				2C18ECB922BD3257009E0D55 /* ProductTableViewCell.swift in Sources */,
 			);
@@ -355,7 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ShoppingList/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ShoppingList/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,7 +376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ShoppingList/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ShoppingList/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

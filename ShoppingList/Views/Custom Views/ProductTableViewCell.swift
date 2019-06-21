@@ -10,7 +10,7 @@ import UIKit
 
 class ProductTableViewCell: UITableViewCell {
     
-    var delegate: ButtonTableViewCellDelegate?
+    var delegate: ProductTableViewCellDelegate?
     
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var purchasedButton: UIButton!
@@ -35,6 +35,6 @@ extension ProductTableViewCell {
     }
 }
 
-protocol ButtonTableViewCellDelegate {
+protocol ProductTableViewCellDelegate {
     func ProductcellButtonTapped(_ sender: ProductTableViewCell)
 }

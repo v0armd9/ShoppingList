@@ -9,16 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Product List Table View Controller-->
         <scene sceneID="cNp-Ax-m7x">
             <objects>
-                <tableViewController id="a6g-8G-AHy" sceneMemberID="viewController">
+                <tableViewController id="a6g-8G-AHy" customClass="ProductListTableViewController" customModule="ShoppingList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Giy-Dp-qnu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="77" id="uG4-C6-Gps" customClass="ProductTableViewCell" customModule="ShoppingList" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="productCell" rowHeight="77" id="uG4-C6-Gps" customClass="ProductTableViewCell" customModule="ShoppingList" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="77"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uG4-C6-Gps" id="FiY-En-uLd">
@@ -67,7 +67,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="1ER-uX-OGa">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="VIo-r6-eeb"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="VIo-r6-eeb">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="a6g-8G-AHy" id="auv-Lv-sQ0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lp6-mK-XUZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
