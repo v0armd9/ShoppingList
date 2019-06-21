@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="77" id="uG4-C6-Gps">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="77" id="uG4-C6-Gps" customClass="ProductTableViewCell" customModule="ShoppingList" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="77"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uG4-C6-Gps" id="FiY-En-uLd">
@@ -41,6 +41,9 @@
                                                         <constraint firstAttribute="width" secondItem="Yq5-Cc-App" secondAttribute="height" multiplier="1:1" id="jk8-gh-X8v"/>
                                                     </constraints>
                                                     <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="buttonTapped:" destination="uG4-C6-Gps" eventType="touchUpInside" id="tt5-hj-92u"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </stackView>
@@ -52,6 +55,10 @@
                                         <constraint firstItem="QFj-Tq-tRC" firstAttribute="leading" secondItem="FiY-En-uLd" secondAttribute="leadingMargin" constant="2" id="vin-25-kb5"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="productNameLabel" destination="wn7-QI-oTX" id="oe4-Aa-5M3"/>
+                                    <outlet property="purchasedButton" destination="Yq5-Cc-App" id="Yaa-M4-fFH"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
